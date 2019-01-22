@@ -1,2 +1,2 @@
-# HW9_SQL
-Homework 9 - SQL Scripts
+# HW8_SQL
+Homework 8 - SQL Scripts
