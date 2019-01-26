@@ -115,9 +115,9 @@ SELECT a.first_name, a.last_name, b.*
 SELECT a.first_name, a.last_name, SUM(b.amount) as 'sum rung up'
 	FROM staff AS a
     LEFT OUTER JOIN payment as b ON a.staff_id = b.staff_id
-    WHERE b.payment_date BETWEEN '2005-08-01' AND '2005-08-31' 
+    WHERE DATE(b.payment_date) BETWEEN '2005-08-01' AND '2005-08-31' 
     GROUP BY a.first_name, a.last_name;  
-
+    
 -- 6c. List each film and the number of actors who are listed for that film. 
 -- Use tables `film_actor` and `film`. Use inner join.
 
